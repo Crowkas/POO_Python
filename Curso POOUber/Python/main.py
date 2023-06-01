@@ -1,14 +1,17 @@
 from car import Car 
+from account import Account
+from uberBlack import UberBlack
+from uberVan import UberVan
+from uberPool import UberPool
+from uberX import UberX
 
 if __name__ == "__main__":
     print('Hola mundo')
 
-car = Car()
-car.license = 'AMS135'
-car.driver = 'Andres Herrera'
+car = Car('CEG673', Account('Andres Herrera', 'ANU683'))
 print(vars(car))
+print(vars(car.driver))
 
-car2 = Car()
-car2.license = 'GRJ678'
-car2.driver = 'Andrea Herrera'
-print(vars(car2))
+uberX = UberX('HTJ235', 'Andres Herrera', 'Chevrolet', 'Spark')
+print(vars(uberX))
+print(vars(car.driver))
